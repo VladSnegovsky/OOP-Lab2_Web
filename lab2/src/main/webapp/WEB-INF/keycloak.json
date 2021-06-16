@@ -1,0 +1,8 @@
+{
+  "realm": "Lab-2",
+  "bearer-only": true,
+  "auth-server-url": "https://oop-lab2.herokuapp.com/auth/",
+  "ssl-required": "external",
+  "resource": "lab2-back",
+  "confidential-port": 0
+}

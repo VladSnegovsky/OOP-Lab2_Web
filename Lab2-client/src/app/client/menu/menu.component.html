@@ -1,0 +1,33 @@
+<header>
+    <h1> Menu </h1>
+</header>
+
+<div class="menu">
+    <form action="get-order" [formGroup]="form">
+        <div class="menu-option">
+            <div class="part-header"> <h2> Buckwheat </h2> </div>
+            <div class="part-description"> <p> Buy a portion of this heavenly manna and get a fork as a gift! You will never forget this taste. </p> </div>
+            <div class="part-price"> <p> Cost: 1$ </p> </div>
+            <div class="part-quantity"> <p> To order <input matInput type="text" formControlName="buckwheatQuantity" #input placeholder="quantity" required> </p> </div>
+        </div>
+        <div class="menu-option">
+            <div class="part-header"> <h2> Rice </h2> </div>
+            <div class="part-description"> <p> Restores attentiveness and fatigue. As a bonus you will receive a code from WiFi! </p> </div>
+            <div class="part-price"> <p> Cost: 2$ </p> </div>
+            <div class="part-quantity"> <p> To order <input matInput type="text" formControlName="riceQuantity" #input placeholder="quantity" required> </p> </div>
+        </div>
+        <div class="menu-option">
+            <div class="part-header"> <h2> Compote </h2> </div>
+            <div class="part-description"> <p> Real Ukrainian Coke. One glass of this drink kills all germs and protects from radiation. </p> </div>
+            <div class="part-price"> <p> Cost: 1$ </p> </div>
+            <div class="part-quantity"> <p> To order <input matInput type="text" formControlName="compoteQuantity" #input placeholder="quantity" required> </p> </div>
+        </div>
+        <div class="menu-option">
+            <div class="part-header"> <h2> Cyber Cutlet </h2> </div>
+            <div class="part-description"> <p> This cutlet makes you a real cyber monster. Eat one and write your own Google! </p> </div>
+            <div class="part-price"> <p> Cost: 10$ </p> </div>
+            <div class="part-quantity"> <p> To order <input matInput type="text" formControlName="cutletQuantity" #input placeholder="quantity" required> </p> </div>
+        </div>
+        <div class="button-link"> <input type="submit" value="Make order" (click)="makeOrder()"> </div>
+    </form>
+</div>

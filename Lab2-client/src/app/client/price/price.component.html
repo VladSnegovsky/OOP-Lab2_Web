@@ -1,0 +1,17 @@
+<header>
+    <h1> Peyment </h1>
+</header>
+
+<div class="order">
+    <form action="paythe-bill">
+        <div class="order-header"> <h2> Your order: </h2> </div>
+        <div class="positions">
+            <p> Buckwheat (portions): {{buckwheat}}</p>
+            <p> Rice (portions): {{rice}} </p>
+            <p> Compote (glasses): {{compote}} </p>
+            <p> Cyber Cutlet (units): {{cyberCutlet}} </p>
+            <div class="price"> <p>Total price: <input type="number" name="price" value={{price}} readonly> $</p> </div>
+        </div>
+        <div class="button-link"> <input type="submit" value="Pay" (click)="pay()"> </div>
+    </form>
+</div>

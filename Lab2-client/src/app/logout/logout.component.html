@@ -1,0 +1,5 @@
+<mat-toolbar color="bisque" style="background-color: bisque">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="end">
+        <button mat-flat-button *ngIf="login|async" (click)="logout()" style="background-color: bisque; font-family: Century Gothic;">Log out</button>
+    </mat-toolbar-row>
+</mat-toolbar>

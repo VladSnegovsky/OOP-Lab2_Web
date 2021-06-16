@@ -1,0 +1,17 @@
+<header>
+    <h1> Management </h1>
+</header>
+
+<form action="set-price" [formGroup]="form">
+    <div class="order">
+        <div class="order-header"> <h2> Visitor order: </h2> </div>
+        <div class="positions">
+            <p> Buckwheat (portions): {{buckwheat}} (1$) </p>
+            <p> Rice (portions): {{rice}} (2$) </p>
+            <p> Compote (glasses): {{compote}} (1$) </p>
+            <p> Cyber Cutlet (units): {{cyberCutlet}} (10$) </p>
+            <p> Total cost: <input matInput type="number" formControlName="price" placeholder="cost" #input min=0 required> </p>
+        </div>
+    </div>
+    <div class="button-link"> <input type="submit" value="Calculate" (click)="calculate()"> </div>
+</form>
